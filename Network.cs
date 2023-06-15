@@ -56,6 +56,8 @@ namespace Ramsey
 
         public static void GroundStateVariance(int N, int[] x, int n, bool optimize)
         {
+            //Can be used for all measures of extremal cases, i.e. E1, the degree variance, eigenvector centrality, correlation coefficient for mixing, or some
+            //other property of interest.
             Graph g;
             List<double> variances = new List<double>();
             for (int i = 0; i < n; i++)
